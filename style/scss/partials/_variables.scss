@@ -1,0 +1,35 @@
+
+// # Variables
+//---------------------------------------------------------------------------------------------------- */
+
+// THEME COLORS
+$main-color: blue;
+$dark-color: darken($main-color, 50%);
+$background-color: $main-color;
+
+// THEME FONTS
+$main-font: "",sans-serif;
+$header-font: "",sans-serif;
+$main-font-color: #000;
+
+// HEADERS
+$header-color: $main-color;
+
+//----------------------------------------------------------//
+//    BREAKPOINTS                                           //
+//    -------------------------------------------------     //
+//    EXTRA SMALL DEVICES                    ie. phones     //
+      $xs: 767px;                                           //
+//    -------------------------------------------------     //
+//    SMALL DEVICES                         ie. tablets     //
+      $sm: 768px;                                           //
+//    -------------------------------------------------     //
+//    MEDIUM DEVICES                       ie. desktops     //
+      $md: 992px;                                           //
+//    -------------------------------------------------     //
+//    LARGE DEVICES                         ie. largest     //
+      $lg: 1200px;                                          //
+//    -------------------------------------------------     //
+//----------------------------------------------------------//
+
+$gutter-width: 30px;

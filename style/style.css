@@ -1,0 +1,27 @@
+/*
+Project Name: Map Box Plugin
+Description: A 3D Map Presentation for Google Maps
+Author: Jordan Loeser
+Author URI: http://jordanloeser.com/
+Version:      1.0.0
+*/
+/* # Reset
+---------------------------------------------------------------------------------------------------- */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #000;
+  background: blue;
+  font-family: "", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

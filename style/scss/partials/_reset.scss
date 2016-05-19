@@ -1,0 +1,22 @@
+/* # Reset
+---------------------------------------------------------------------------------------------------- */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+   margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $main-font-color;
+  background: $background-color;
+  font-family: $main-font;
+}

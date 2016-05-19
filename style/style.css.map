@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;AAGA,oBAAqB;EACnB,kBAAkB,EAAE,UAAU;EAC9B,eAAe,EAAE,UAAU;EAC3B,UAAU,EAAE,UAAU;;AAGxB;;;EAGG;EACA,MAAM,EAAE,CAAC;EACV,OAAO,EAAE,CAAC;;AAGZ,IAAK;EACH,KAAK,ECNW,IAAI;EDOpB,UAAU,ECJG,IAAW;EDKxB,WAAW,ECVD,cAAa",
+"sources": ["scss/partials/_reset.scss","scss/partials/_variables.scss"],
+"names": [],
+"file": "style.css"
+}
