@@ -24,6 +24,12 @@
     width: auto;
     perspective: 100000px;
   }
+  &.flat {
+    position: absolute !important;
+    bottom: -25px;
+    height: auto;
+    top: -25px;
+  }
 }
 
 /* # Clouds
@@ -37,13 +43,12 @@
     transform: rotateZ(-10deg) rotateY(30deg) rotateX(50deg) translateX(500px); // With tilted cloud, only translateX
   }
   &.one {
-    width: 250px;
-    //left: 50%;
-    //top: 50%;
+    width: 200px;
   }
   &.two {
-    width: 250px;
-    //left: 100%;
-    //top: 0;
+    width: 200px;
+  }
+  &.three {
+    width: 200px;
   }
 }

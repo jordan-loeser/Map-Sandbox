@@ -47,6 +47,11 @@ body {
     height: auto;
     width: auto;
     perspective: 100000px; }
+  #map.flat {
+    position: absolute !important;
+    bottom: -25px;
+    height: auto;
+    top: -25px; }
 
 /* # Clouds
 ---------------------------------------------------------------------------------------------------- */
@@ -55,8 +60,10 @@ body {
   .cloud.realistic {
     transform: rotateZ(-10deg) rotateY(30deg) rotateX(50deg) translateX(500px); }
   .cloud.one {
-    width: 250px; }
+    width: 200px; }
   .cloud.two {
-    width: 250px; }
+    width: 200px; }
+  .cloud.three {
+    width: 200px; }
 
 /*# sourceMappingURL=style.css.map */

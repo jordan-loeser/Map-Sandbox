@@ -3,20 +3,17 @@ function moveClouds() {
   var disp = 0;
   var width = window.innerWidth;
 
-  // Place the clouds
-
-  placeCloud(cloud[0], "50%", "50%");
-  placeCloud(cloud[1], "70%", "20%");
-  
+  randPlaceCloud(cloud);
 
   // Start Animation
-  var id = setInterval(drift, 50);
+  if(cloud.length >= 1) {
+    var id = setInterval(drift, 30);
+  }
 
   function drift (){
-    var i;
-    for(i = 0; i < cloud.length; i++) {
-      if (disp >= width) {
-          disp = -1000; // disp = 0?
+    for(var i = 0; i < cloud.length; i++) {
+      if (disp >= width * 1.5) {
+          disp = -1.5 * width; // disp = 0?
       } else {
           disp++;
           cloud[i].style.transform = "translate(" + -1 * disp + "px, " +  .25 * disp + "px)";
@@ -33,9 +30,9 @@ function placeCloud(cloud, top, left) {
 }
 
 // Place clouds randomly
-/*
 function randPlaceCloud(cloud) {
-  cloud.style.left = 100 * Math.random() + "%";
-  cloud.style.top = 100 * Math.random() + "%";
+  for(var i = 0; i < cloud.length; i++) {
+    cloud[i].style.left = 100 * Math.random() + "%";
+    cloud[i].style.top = 90 * Math.random() + "%";
+  }
 }
-*/
