@@ -5,10 +5,10 @@ function initMap() {
   var mapOptions = {
     center: centerCoord, //{lat: 40.506977, lng: -73.886787},
     mapTypeId: google.maps.MapTypeId.SATELLITE,
-    zoom: 18,
+    zoom: 11,
     tilt: 45,
     draggable: false,
-    //scrollwheel: false,
+    scrollwheel: false,
     disableDoubleClickZoom: true,
     disableDefaultUI: true,
       //mapTypeControl: true,

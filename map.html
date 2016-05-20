@@ -4,13 +4,16 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="style/style.css">
   </head>
-  <body>
+  <body onload="moveClouds()">
     <div id="mapHolder">
       <div id="map" class=""></div>
+      <img class="cloud one" src="images/cloud1.png" alt="" />
+      <img class="cloud two" src="images/cloud1.png" alt="" />
     </div>
 
     <!-- SCRIPTS -->
     <script src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>

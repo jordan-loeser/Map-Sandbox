@@ -25,3 +25,25 @@
     perspective: 100000px;
   }
 }
+
+/* # Clouds
+---------------------------------------------------------------------------------------------------- */
+
+.cloud {
+  position: absolute;
+  //transition: all 5s ease;
+  // transform: translate(-800px, 200px); // Without tilted cloud, translateXY 4:1
+  &.realistic {
+    transform: rotateZ(-10deg) rotateY(30deg) rotateX(50deg) translateX(500px); // With tilted cloud, only translateX
+  }
+  &.one {
+    width: 250px;
+    //left: 50%;
+    //top: 50%;
+  }
+  &.two {
+    width: 250px;
+    //left: 100%;
+    //top: 0;
+  }
+}
