@@ -1,22 +1,25 @@
 function moveClouds() {
   var cloud = document.getElementsByClassName('cloud');
-  var disp = 0;
+  var dispX = 0;
+  var dispY = 0;
   var width = window.innerWidth;
 
   randPlaceCloud(cloud);
 
   // Start Animation
   if(cloud.length >= 1) {
-    var id = setInterval(drift, 30);
+    var id = setInterval(drift, 80);
   }
 
   function drift (){
     for(var i = 0; i < cloud.length; i++) {
-      if (disp >= width * 1.5) {
-          disp = -1.5 * width; // disp = 0?
+      if (dispX >= width * 1.5) {
+          dispX = -1.5 * width; // Push the cloud past the container
+          dispY = -1.5 * width;
       } else {
-          disp++;
-          cloud[i].style.transform = "translate(" + -1 * disp + "px, " +  .25 * disp + "px)";
+          dispX -= .25;
+          dispY += .0625;
+          cloud[i].style.transform = "translate(" + dispX + "px, " + dispY + "px)";
       }
     }
   }

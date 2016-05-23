@@ -5,10 +5,10 @@ function initMap() {
   var mapOptions = {
     center: centerCoord,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
-    zoom: 18,
+    zoom: 11,
     tilt: 45,
     draggable: false,
-    //scrollwheel: false,
+    scrollwheel: false,
     disableDoubleClickZoom: true,
     disableDefaultUI: true,
       //mapTypeControl: true,
@@ -21,6 +21,8 @@ function initMap() {
   };
 
   var map = new google.maps.Map(mapDiv, mapOptions);
+  google.maps.event.trigger(map, "resize");
+  map.setCenter(centerCoord); // Recenter when resized
 
   // Adjust Tilt
   google.maps.event.addListener(map, 'tilt_changed', function() {
@@ -28,7 +30,7 @@ function initMap() {
     if (map.getTilt() == 0) {
       mapDiv.className = "hasPerspective";
     } else { // Remove perspective when google maps can do it for us
-      mapDiv.className = "";
+      mapDiv.className = "flat";
       map.setHeading(45);
     }
     google.maps.event.trigger(map, "resize");
@@ -42,6 +44,8 @@ function initMap() {
     for(var i = 0; i < cloud.length; i++) {
       cloud[i].style.width = (zoom / 22) * 245 + "px";
     }
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(centerCoord); // Recenter when resized
   });
 
 }
