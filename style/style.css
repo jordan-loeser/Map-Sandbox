@@ -53,7 +53,8 @@ body {
 ---------------------------------------------------------------------------------------------------- */
 .cloud {
   position: absolute;
-  transition: all 1s linear; }
+  transition: all 1s linear;
+  z-index: 100; }
   .cloud.realistic {
     transform: rotateZ(-10deg) rotateY(30deg) rotateX(50deg) translateX(500px); }
   .cloud.one {
