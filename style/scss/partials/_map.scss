@@ -53,3 +53,11 @@
     width: 200px;
   }
 }
+
+.orbit {
+  position: absolute;
+  transition: all 1s linear;
+  &.one {
+    width: 75px;
+  }
+}

@@ -63,4 +63,10 @@ body {
   .cloud.three {
     width: 200px; }
 
+.orbit {
+  position: absolute;
+  transition: all 1s linear; }
+  .orbit.one {
+    width: 75px; }
+
 /*# sourceMappingURL=style.css.map */

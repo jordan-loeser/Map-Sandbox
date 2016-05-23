@@ -4,7 +4,7 @@ function moveClouds() {
   var dispY = 0;
   var width = window.innerWidth;
 
-  randPlaceCloud(cloud);
+  placeRandomly(cloud);
 
   // Start Animation
   if(cloud.length >= 1) {
@@ -14,7 +14,7 @@ function moveClouds() {
   function drift (){
     for(var i = 0; i < cloud.length; i++) {
       if (dispX >= width * 1.5) {
-          dispX = -1.5 * width; // Push the cloud past the container
+          dispX = 1.5 * width; // Push the cloud past the container
           dispY = -1.5 * width;
       } else {
           dispX -= .25;
@@ -27,15 +27,17 @@ function moveClouds() {
 }
 
 // Place the clouds
-function placeCloud(cloud, top, left) {
+function place(cloud, top, left) {
   cloud.style.left = left;
   cloud.style.top = top;
 }
 
 // Place clouds randomly
-function randPlaceCloud(cloud) {
-  for(var i = 0; i < cloud.length; i++) {
-    cloud[i].style.left = 100 * Math.random() + "%";
-    cloud[i].style.top = 90 * Math.random() + "%";
+function placeRandomly(objects) {
+  for(var i = 0; i < objects.length; i++) {
+    objects[i].style.left = 100 * Math.random() + "%";
+    objects[i].style.top = 90 * Math.random() + "%";
   }
 }
+
+addLoadEvent(moveClouds);

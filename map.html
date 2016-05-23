@@ -4,20 +4,25 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="style/style.css">
   </head>
-  <body onload="moveClouds()">
+  <body>
     <div id="mapHolder">
       <div id="map" class=""></div>
+      <!-- CLOUDS -->
       <img class="cloud one" src="images/cloud1.png" alt="" />
       <img class="cloud one" src="images/cloud1.png" alt="" />
       <img class="cloud two" src="images/cloud2.png" alt="" />
       <img class="cloud two" src="images/cloud2.png" alt="" />
       <img class="cloud three" src="images/cloud3.png" alt="" />
       <img class="cloud three" src="images/cloud3.png" alt="" />
+      <!-- ORBITS -->
+      <img class="orbit one" src="images/plane1.png" alt=""/>
     </div>
 
     <!-- SCRIPTS -->
+    <script src="js/onload.js"></script>
     <script src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
     <script src="js/animateCloud.js"></script>
+    <script src="js/animateOrbiter.js"></script>
   </body>
 </html>
